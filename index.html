@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c6655" />
+    <meta name="description" content="Une fiche hors ligne, claire et sourcée pour comprendre la demande de carte nationale d'identité au Sénégal." />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Démarches en clair — Sénégal</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Démarches en clair — accueil">
+        <span class="brand-mark" aria-hidden="true">d.</span>
+        <span>Démarches <em>en clair</em></span>
+      </a>
+      <div class="top-actions">
+        <button class="language" id="languageToggle" type="button" aria-expanded="false" aria-controls="languageNotice">Wolof bientôt</button>
+        <span class="connection" id="connectionStatus" role="status"><span class="status-dot"></span>Connexion active</span>
+      </div>
+    </header>
+
+    <main id="top" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="flag" aria-hidden="true"><i></i><i></i><i></i></span> Sénégal · prototype indépendant</p>
+          <h1 id="hero-title">La CNI, <em>sans détour.</em></h1>
+          <p class="hero-text">Les informations officielles, ramenées à l’essentiel. Une fiche légère que vous pouvez consulter même sans réseau.</p>
+          <div class="hero-tags"><span>01 démarche vérifiée</span><span>Sans compte</span><span>Pas de données envoyées</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-paper"><span class="paper-seal">SN</span><span class="paper-line long"></span><span class="paper-line"></span><span class="paper-line short"></span><span class="paper-stamp">CLAIR<br />& SOURCÉ</span></div>
+          <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span>
+        </div>
+      </section>
+
+      <section class="guide-card" aria-labelledby="guide-title">
+        <div class="guide-header">
+          <div><p class="eyebrow">Votre situation</p><h2 id="guide-title">Que souhaitez-vous faire ?</h2></div>
+          <span class="source-date" id="sourceDate"></span>
+        </div>
+
+        <div class="mode-switch" role="group" aria-label="Choisir votre situation">
+          <button class="mode-button is-active" type="button" data-mode="standard" aria-pressed="true">Demander / renouveler</button>
+          <button class="mode-button" type="button" data-mode="lost" aria-pressed="false">Ma carte est perdue</button>
+        </div>
+
+        <div class="answer-intro">
+          <div class="answer-icon" aria-hidden="true">✓</div>
+          <div><p class="answer-kicker" id="answerKicker">Fiche officielle simplifiée</p><h3 id="answerTitle">Demander une carte nationale d’identité</h3><p id="answerSummary"></p></div>
+        </div>
+
+        <div class="fact-grid">
+          <section class="fact-panel" aria-labelledby="documentsTitle">
+            <div class="panel-heading"><span class="panel-number">01</span><h4 id="documentsTitle">À préparer</h4></div>
+            <ul id="answerDocuments" class="check-list"></ul>
+            <div id="specialCases" class="special-cases"></div>
+          </section>
+          <section class="fact-panel" aria-labelledby="placesTitle">
+            <div class="panel-heading"><span class="panel-number">02</span><h4 id="placesTitle">Où faire la demande ?</h4></div>
+            <p id="answerPlaces" class="fact-copy"></p>
+            <div class="contact-note"><span class="contact-icon" aria-hidden="true">☎</span><span><small>Pour confirmer une information</small><strong id="helpNumber">DAF · 800 00 2012</strong></span></div>
+          </section>
+        </div>
+
+        <section class="steps-panel" aria-labelledby="stepsTitle">
+          <div class="panel-heading"><span class="panel-number">03</span><h4 id="stepsTitle">Les étapes</h4></div>
+          <ol id="answerSteps" class="steps-list"></ol>
+        </section>
+
+        <section class="checklist-panel" aria-labelledby="checklistTitle">
+          <div class="checklist-copy"><p class="eyebrow">Votre mémo</p><h4 id="checklistTitle">Avant de vous déplacer</h4><p>Cochez vos éléments : ils restent enregistrés sur cet appareil.</p></div>
+          <div id="personalChecklist" class="personal-checklist"></div>
+        </section>
+
+        <div class="source-box">
+          <span class="source-icon" aria-hidden="true">↗</span>
+          <div><strong>Source officielle</strong><p><a id="sourceLink" href="https://www.interieur.gouv.sn/services/services-aux-usagers/carte-nationale-d-identite-biometrique" target="_blank" rel="noreferrer">Ministère de l’Intérieur et de la Sécurité publique</a><span id="sourceMeta"></span></p></div>
+          <span class="source-check" aria-hidden="true">✓</span>
+        </div>
+        <p class="disclaimer">Prototype indépendant, non affilié à l’administration. Les horaires, rendez-vous et délais ne sont pas précisés ici : confirmez-les auprès du service compétent avant de vous déplacer.</p>
+      </section>
+
+      <aside id="languageNotice" class="language-notice" hidden role="status">
+        <strong>La version wolof est en préparation.</strong> Nous ne traduisons pas encore les consignes administratives : elles doivent être relues par un locuteur compétent avant publication.
+      </aside>
+
+      <section class="why-section" aria-label="À propos de cette fiche">
+        <div><span class="why-mark">A</span><p><strong>Une seule démarche, bien faite.</strong><br />Le prototype se concentre sur la carte nationale d’identité plutôt que de répondre au hasard sur toutes les formalités.</p></div>
+        <div><span class="why-mark">B</span><p><strong>La source reste visible.</strong><br />Chaque consigne renvoie à la page officielle et indique quand elle a été vérifiée.</p></div>
+        <div><span class="why-mark">C</span><p><strong>Utile avec peu de réseau.</strong><br />Après la première visite, cette fiche et son mémo sont disponibles hors connexion.</p></div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 · Démarches en clair</span><span>Fait pour HACK47 OFFGRID · Un prototype, pas un service public</span></footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

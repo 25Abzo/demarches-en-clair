@@ -1,0 +1,14 @@
+{
+  "name": "Démarches en clair — Sénégal",
+  "short_name": "Démarches en clair",
+  "description": "Une fiche hors ligne, claire et sourcée pour comprendre la demande de carte nationale d’identité au Sénégal.",
+  "lang": "fr-SN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f1",
+  "theme_color": "#0c6655",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

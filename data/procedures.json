@@ -1,0 +1,59 @@
+{
+  "source": {
+    "checkedAt": "2026-10-08",
+    "checkedAtLabel": "8 octobre 2026",
+    "title": "Carte nationale d’identité biométrique",
+    "url": "https://www.interieur.gouv.sn/services/services-aux-usagers/carte-nationale-d-identite-biometrique"
+  },
+  "shared": {
+    "places": "Au Sénégal : commissariat de police, brigade de gendarmerie, préfecture ou sous-préfecture dont relève le domicile du demandeur.",
+    "contact": "DAF · numéro vert 800 00 2012"
+  },
+  "modes": {
+    "standard": {
+      "kicker": "Fiche officielle simplifiée",
+      "title": "Demander une carte nationale d’identité",
+      "summary": "Tout citoyen sénégalais âgé d’au moins 5 ans peut demander une carte nationale d’identité. La page officielle indique une pièce à présenter; vérifiez les cas particuliers avant votre déplacement.",
+      "documents": [
+        "Ancienne carte nationale d’identité numérisée, ou extrait de naissance datant de moins de 3 mois."
+      ],
+      "notes": [
+        "En cas de doute sur la nationalité : un certificat de nationalité est demandé.",
+        "Si vous portez des lunettes : prévoyez une ordonnance ou un certificat médical."
+      ],
+      "steps": [
+        "Préparez l’ancienne carte numérisée ou un extrait de naissance de moins de 3 mois.",
+        "Déposez la demande dans un commissariat, une brigade de gendarmerie, une préfecture ou une sous-préfecture compétente pour votre domicile.",
+        "Conservez le récépissé : le retrait se fait au lieu de dépôt sur présentation de celui-ci."
+      ],
+      "checklist": [
+        { "id": "identity-document", "label": "J’ai la pièce indiquée" },
+        { "id": "special-case", "label": "J’ai vérifié si un cas particulier me concerne" },
+        { "id": "receipt-plan", "label": "Je garderai le récépissé après le dépôt" }
+      ]
+    },
+    "lost": {
+      "kicker": "Cas particulier · perte",
+      "title": "Remplacer une carte perdue",
+      "summary": "La page du ministère demande un certificat de perte délivré par la police, un timbre de 10 000 FCFA et un extrait de naissance de moins de 3 mois.",
+      "documents": [
+        "Certificat de perte délivré par la police.",
+        "Timbre de 10 000 FCFA.",
+        "Extrait de naissance datant de moins de 3 mois."
+      ],
+      "notes": [
+        "Le montant et les pièces sont ceux indiqués sur la page officielle consultée; confirmez-les auprès de la DAF si vous avez un doute."
+      ],
+      "steps": [
+        "Demandez à la police le certificat de perte.",
+        "Réunissez le timbre de 10 000 FCFA et l’extrait de naissance de moins de 3 mois.",
+        "Déposez votre demande auprès d’un point compétent et gardez le récépissé pour le retrait."
+      ],
+      "checklist": [
+        { "id": "loss-certificate", "label": "J’ai le certificat de perte de la police" },
+        { "id": "stamp", "label": "J’ai le timbre de 10 000 FCFA" },
+        { "id": "birth-record", "label": "Mon extrait date de moins de 3 mois" }
+      ]
+    }
+  }
+}
