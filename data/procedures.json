@@ -13,7 +13,7 @@
     "standard": {
       "kicker": "Fiche officielle simplifiée",
       "title": "Demander une carte nationale d’identité",
-      "summary": "Tout citoyen sénégalais âgé d’au moins 5 ans peut demander une carte nationale d’identité. La page officielle indique une pièce à présenter; vérifiez les cas particuliers avant votre déplacement.",
+      "summary": "Tout citoyen sénégalais âgé d’au moins 5 ans peut demander l’établissement d’une carte nationale d’identité. Pour les cartes CEDEAO délivrées du 4 octobre au 31 décembre 2016, consultez le parcours de renouvellement dédié.",
       "documents": [
         "Ancienne carte nationale d’identité numérisée, ou extrait de naissance datant de moins de 3 mois."
       ],
@@ -30,6 +30,36 @@
         { "id": "identity-document", "label": "J’ai la pièce indiquée" },
         { "id": "special-case", "label": "J’ai vérifié si un cas particulier me concerne" },
         { "id": "receipt-plan", "label": "Je garderai le récépissé après le dépôt" }
+      ]
+    },
+    "renewal2016": {
+      "kicker": "Renouvellement annoncé · première vague",
+      "title": "Renouveler une carte CEDEAO délivrée fin 2016",
+      "summary": "Depuis le 25 septembre 2026, la première vague concerne les cartes délivrées entre le 4 octobre et le 31 décembre 2016. Le communiqué ne précise pas la procédure pour les cartes délivrées à d’autres dates.",
+      "source": {
+        "checkedAtLabel": "8 octobre 2026",
+        "title": "Renouvellement des cartes d’identité biométriques CEDEAO",
+        "url": "https://interieur.gouv.sn/actualites/communiques/renouvellement-cartes-identite-biometriques-cedeao-demarrage-25-septembre-2026"
+      },
+      "places": "Présentez-vous dans un centre d’enrôlement au Sénégal ou à l’étranger. Le communiqué ne donne pas la liste ni les horaires des centres.",
+      "documents": [
+        "Copie de l’ancienne carte d’identité biométrique CEDEAO.",
+        "Extrait de naissance accompagné de la copie littérale."
+      ],
+      "notes": [
+        "Cette première vague vise uniquement les cartes délivrées du 4 octobre au 31 décembre 2016.",
+        "Pour retirer la nouvelle carte : présentez le récépissé de dépôt et l’ancienne carte CEDEAO."
+      ],
+      "steps": [
+        "Vérifiez que votre carte biométrique CEDEAO a été délivrée entre le 4 octobre et le 31 décembre 2016.",
+        "Préparez une copie de cette carte, ainsi qu’un extrait de naissance accompagné de la copie littérale.",
+        "Déposez votre dossier dans un centre d’enrôlement; gardez le récépissé et l’ancienne carte pour le retrait."
+      ],
+      "checklist": [
+        { "id": "renewal-2016-date", "label": "Ma carte a été délivrée entre le 4 oct. et le 31 déc. 2016" },
+        { "id": "renewal-2016-old-card", "label": "J’ai une copie de mon ancienne carte CEDEAO" },
+        { "id": "renewal-2016-birth-record", "label": "J’ai l’extrait de naissance et la copie littérale" },
+        { "id": "renewal-2016-receipt", "label": "Je garderai le récépissé et l’ancienne carte pour le retrait" }
       ]
     },
     "lost": {

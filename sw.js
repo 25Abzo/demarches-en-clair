@@ -1,4 +1,4 @@
-const CACHE_NAME = "demarches-en-clair-v2";
+const CACHE_NAME = "demarches-en-clair-v3";
 const APP_FILES = [
   "./",
   "./index.html",

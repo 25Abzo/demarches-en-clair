@@ -57,6 +57,7 @@ function renderMode(mode) {
   if (!procedure?.modes?.[mode]) return;
   activeMode = mode;
   const content = procedure.modes[mode];
+  const source = content.source || procedure.source;
   for (const button of modeButtons) {
     const selected = button.dataset.mode === mode;
     button.classList.toggle("is-active", selected);
@@ -66,12 +67,12 @@ function renderMode(mode) {
   $("#answerKicker").textContent = content.kicker;
   $("#answerTitle").textContent = content.title;
   $("#answerSummary").textContent = content.summary;
-  $("#answerPlaces").textContent = procedure.shared.places;
+  $("#answerPlaces").textContent = content.places || procedure.shared.places;
   $("#helpNumber").textContent = procedure.shared.contact;
-  $("#sourceDate").textContent = `Vérifié le ${procedure.source.checkedAtLabel}`;
-  $("#sourceLink").href = procedure.source.url;
-  $("#sourceLink").textContent = `Ministère de l’Intérieur — ${procedure.source.title}`;
-  $("#sourceMeta").textContent = ` · page consultée le ${procedure.source.checkedAtLabel}`;
+  $("#sourceDate").textContent = `Vérifié le ${source.checkedAtLabel}`;
+  $("#sourceLink").href = source.url;
+  $("#sourceLink").textContent = `Ministère de l’Intérieur — ${source.title}`;
+  $("#sourceMeta").textContent = ` · page consultée le ${source.checkedAtLabel}`;
   renderList($("#answerDocuments"), content.documents);
   renderList($("#answerSteps"), content.steps);
   renderList($("#specialCases"), content.notes, "special-case");
