@@ -1,12 +1,12 @@
-const CACHE_NAME = "demarches-en-clair-v3";
+const CACHE_NAME = "demarches-en-clair-v4";
 const APP_FILES = [
   "./",
   "./index.html",
-  "./style.css",
-  "./app.js",
+  "./style.css?v=4",
+  "./app.js?v=4",
   "./manifest.json",
   "./icon.svg",
-  "./data/procedures.json"
+  "./data/procedures.json?v=4"
 ];
 
 self.addEventListener("install", (event) => {

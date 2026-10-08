@@ -1,4 +1,4 @@
-const PROCEDURE_URL = "./data/procedures.json";
+const PROCEDURE_URL = "./data/procedures.json?v=4";
 const CHECKLIST_KEY = "demarches-en-clair-checklist-v1";
 const $ = (selector) => document.querySelector(selector);
 const modeButtons = [...document.querySelectorAll("[data-mode]")];
